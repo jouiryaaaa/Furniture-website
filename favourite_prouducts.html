@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Belleza - Favourite Products</title>
+    <link rel="icon" href="Images/logo.jpeg" type="image/jpeg" />
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="index_Homepage.html" class="logo-text">Maison<br>Belleza</a>
+    <input type="text" id="siteSearchInput" placeholder="Search furniture, rooms, styles..." />
+    <button onclick="doSearch()">Search</button>
+    <a href="my_profile.html">&#128100; Profile</a>
+    <a href="cart.html">&#128722; Cart (3)</a>
+</div>
+
+<div class="navbar">
+    <a href="index_Homepage.html">Home</a>
+    <a href="Shop_By_Room_Page.html">Shop by Room</a>
+    <a href="Product_Details_Page.html">Products</a>
+    <a href="favourite_prouducts.html">Favourite Products</a>
+    <a href="Gallery.html">Inspirational Gallery</a>
+</div>
+
+<div class="fav-header">
+    <h1>❤️ My Favourite Products</h1>
+    <p>Your curated wishlist — items you love from our collection</p>
+</div>
+
+<a href="my_profile.html" class="back-link"><h2>← Back to Profile</h2></a>
+
+<div class="fav-container">
+    <div class="fav-grid">
+        
+        <!-- Product 1: Natural Swirl Jute Rug (from products page) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/Rug1.jpeg" alt="Natural Swirl Jute Rug" onerror="this.src='https://placehold.co/400x300/B3C9D6/2D3536?text=Rug'"></a>
+            <div class="fav-info">
+                <h3>Natural Swirl Jute Rug</h3>
+                <h4>Rug, Flatwoven, Natural</h4>
+                <div class="fav-price">10,000 LE</div>
+                <div class="fav-rating"><span>★★★★★</span> (256 reviews)</div>
+                <span class="fav-tag">🏷️ Best Seller</span>
+                <p class="fav-description">Modern design that complements any room. Handwoven from sustainable jute fibers.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 2: Dreamy Fluff Rug (from products page) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/Rug2.jpeg" alt="Dreamy Fluff Rug" onerror="this.src='https://placehold.co/400x300/B3C9D6/2D3536?text=Rug'"></a>
+            <div class="fav-info">
+                <h3>Dreamy Fluff Rug</h3>
+                <h4>Shaggy, Soft, Cream</h4>
+                <div class="fav-price">4,000 LE</div>
+                <div class="fav-rating"><span>★★★★☆</span> (128 reviews)</div>
+                <span class="fav-tag">🏷️ Cozy</span>
+                <p class="fav-description">Ultra-soft plush texture for ultimate comfort. Perfect for bedrooms and living areas.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 3: RAVAROR (from products page) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/Rug3.jpeg" alt="RAVAROR Rug" onerror="this.src='https://placehold.co/400x300/B3C9D6/2D3536?text=Rug'"></a>
+            <div class="fav-info">
+                <h3>RAVAROR</h3>
+                <h4>Woven, Geometric, Beige</h4>
+                <div class="fav-price">8,000 LE</div>
+                <div class="fav-rating"><span>★★★★★</span> (89 reviews)</div>
+                <span class="fav-tag">🏷️ Scandinavian</span>
+                <p class="fav-description">Modern geometric pattern that adds visual interest to any space. Durable woven construction.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 4: TIDTABELL (from products page) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/Rug4.jpeg" alt="TIDTABELL Rug" onerror="this.src='https://placehold.co/400x300/B3C9D6/2D3536?text=Rug'"></a>
+            <div class="fav-info">
+                <h3>TIDTABELL</h3>
+                <h4>Flatwoven, Cotton, Natural</h4>
+                <div class="fav-price">2,500 LE</div>
+                <div class="fav-rating"><span>★★★★☆</span> (67 reviews)</div>
+                <span class="fav-tag">🏷️ Budget Friendly</span>
+                <p class="fav-description">Lightweight and easy to clean. Machine washable for everyday convenience.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 5: BRONDEN (from products page) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/Rug5.jpeg" alt="BRONDEN Rug" onerror="this.src='https://placehold.co/400x300/B3C9D6/2D3536?text=Rug'"></a>
+            <div class="fav-info">
+                <h3>BRONDEN</h3>
+                <h4>Wool, Braided, Brown</h4>
+                <div class="fav-price">3,000 LE</div>
+                <div class="fav-rating"><span>★★★★☆</span> (112 reviews)</div>
+                <span class="fav-tag">🏷️ Durable</span>
+                <p class="fav-description">Traditional braided design made from premium wool. Built to last for generations.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 6: LANDBANA (from products page) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/Rug6.jpeg" alt="LANDBANA Rug" onerror="this.src='https://placehold.co/400x300/B3C9D6/2D3536?text=Rug'"></a>
+            <div class="fav-info">
+                <h3>LANDBANA</h3>
+                <h4>Jute, Natural Fiber, Eco</h4>
+                <div class="fav-price">4,000 LE</div>
+                <div class="fav-rating"><span>★★★★★</span> (203 reviews)</div>
+                <span class="fav-tag">🏷️ Eco-Friendly</span>
+                <p class="fav-description">Sustainable natural fibers. Biodegradable and ethically sourced materials.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 7: Velvet Luxe Ottoman (bonus product) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/pic.33.jpeg" alt="Velvet Luxe Ottoman"></a>
+            <div class="fav-info">
+                <h3>Velvet Luxe Ottoman</h3>
+                <h4>Ottoman, Velvet, Emerald</h4>
+                <div class="fav-price">2,890 LE</div>
+                <div class="fav-rating"><span>★★★★★</span> (45 reviews)</div>
+                <span class="fav-tag">🏷️ Luxury</span>
+                <p class="fav-description">Multi-functional storage ottoman with plush velvet upholstery and hidden compartment.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product 8: Walnut Bookshelf (bonus product) -->
+        <div class="fav-card">
+            <a href="Product_Details_Page.html"><img class="fav-img" src="Images/pic.34.jpeg" alt="Walnut Bookshelf"></a>
+            <div class="fav-info">
+                <h3>Walnut Bookshelf</h3>
+                <h4>Bookshelf, Solid Wood, Walnut</h4>
+                <div class="fav-price">5,990 LE</div>
+                <div class="fav-rating"><span>★★★★★</span> (78 reviews)</div>
+                <span class="fav-tag">🏷️ Handcrafted</span>
+                <p class="fav-description">5-tier adjustable shelves made from solid walnut wood. Perfect for any room.</p>
+                <div class="fav-actions">
+                    <a href="cart.html" class="add-to-cart-fav">🛒 Add to Cart</a>
+                    <a href="#" class="remove-fav" onclick="return false;">❌ Remove</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="fav-note">
+         Tip: Click "Add to Cart" to purchase your favourite items. Browse our <a href="Product_Details_Page.html" >Products page</a> to add more favourites!
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h3>Maison Belleza</h3>
+            <p>Curated furniture and decor for the modern home. Designed with care, built to endure.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="Shop_By_Room_Page.html">Shop by Room</a>
+            <a href="favourite_prouducts.html">Favourite Products</a>
+            <a href="new-collection.html">New Collection</a>
+            <a href="offers.html">Special Offers</a>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About Us</a>
+            <a href="sustainability.html">Sustainability</a>
+            <a href="previous_orders.html">Previous Orders</a>
+            <a href="permissions.html">Permissions</a>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" placeholder="Your name" />
+            <label for="femail">Email</label>
+            <input type="email" id="femail" placeholder="your@email.com" />
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" placeholder="How can we help?"></textarea>
+            <button type="button">Send Message</button>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2026 Maison Belleza. All rights reserved.</span>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Floating Contact Button -->
+<div class="float-contact-btn">
+    <div class="float-contact-tooltip">Get in touch</div>
+    <a href="Contact.html" class="float-contact-bubble">
+        <span class="float-icon">&#9993;</span> Contact Us
+    </a>
+</div>
+
+    <script src="java_func.js"></script>
+</body>
+</html>

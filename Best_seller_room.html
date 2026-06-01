@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Belleza - Best Sellers</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" href="Images/logo.jpeg" type="image/jpeg" />
+</head>
+<body>
+    <div class="top-bar">
+       <a href="index_Homepage.html" class="logo-text">Maison<br>Belleza</a>
+        <input type="text" placeholder="Search furniture, rooms, styles..." />
+        <button>Search</button>
+        <a href="my_profile.html">&#128100; Profile</a>
+        <a href="cart.html">&#128722; Cart (3)</a>
+    </div>
+
+    <div class="navbar">
+        <a href="index_Homepage.html">Home</a>
+        <a href="Shop_By_Room_Page.html">Shop by Room</a>
+        <a href="Product_Details_Page.html">Products</a>
+        <a href="favourite_prouducts.html">Favourite Products</a>
+        <a href="gallery.html">Inspirational Gallery</a>
+    </div>
+
+    <div class="selection-tabs">
+        <a href="Best_seller_room.html" class="tab-item active">Best Seller</a>
+        <a href="new_arrivals.html" class="tab-item">New Arrival</a>
+    </div>
+
+    <section class="best-seller">
+        <h2>Best Seller Rooms</h2>
+        <p class="subtitle">Our Most Popular Spaces</p>
+
+        <div class="rooms best-rooms">
+            <div class="best">
+                <img src="Images/bestbedroom.jpg" alt="Living Room">
+                <h3>Cozy Living Room</h3>
+                <button onclick="window.location.href='Shop_By_Room_Page.html'">Shop Now</button>
+            </div>
+            <div class="best">
+                <img src="Images/bedroombestsellernew.jpg" alt="Bedroom">
+                <h3>Elegant Bedroom</h3>
+                <button onclick="window.location.href='Shop_By_Room_Page.html'">Shop Now</button>
+            </div>
+            <div class="best">
+                <img src="Images/chicdiningarea.jpg" alt="Dining Room">
+                <h3>Chic Dining Area</h3>
+                <button onclick="window.location.href='Shop_By_Room_Page.html'">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Maison Belleza</h3>
+                <p>Curated furniture and decor for the modern home. Designed with care, built to endure.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="Shop_By_Room_Page.html">Shop by Room</a>
+                <a href="favourite_prouducts.html">Favourite Products</a>
+                <a href="new-collection.html">New Collection</a>
+                <a href="offers.html">Special Offers</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="sustainability.html">Sustainability</a>
+                <a href="previous_orders.html">Previous Orders</a>
+                <a href="permissions.html">Permissions</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <label for="fname">Name</label>
+                <input type="text" id="fname" placeholder="Your name" />
+                <label for="femail">Email</label>
+                <input type="email" id="femail" placeholder="your@email.com" />
+                <label for="fmsg">Message</label>
+                <textarea id="fmsg" placeholder="How can we help?"></textarea>
+                <button type="button">Send Message</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Maison Belleza. All rights reserved.</span>
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="float-contact-btn">
+        <div class="float-contact-tooltip">Get in touch</div>
+        <a href="Contact.html" class="float-contact-bubble">
+            <span class="float-icon">&#9993;</span> Contact Us
+        </a>
+    </div>
+
+    <script src="java_func.js"></script>
+</body>
+</html>

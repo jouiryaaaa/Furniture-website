@@ -1,0 +1,481 @@
+
+/* ================================================
+   SHOP BY ROOM, BEST SELLERS & NEW ARRIVALS PAGES
+   ================================================ */
+
+/* Make tab-items work as links */
+.selection-tabs a.tab-item {
+    display: inline-block;
+    text-decoration: none;
+    color: #2D3536;
+}
+.selection-tabs a.tab-item.active {
+    background-color: #697C70;
+    color: white;
+}
+
+/* Section headings for Best Seller / New Arrivals */
+.best-seller h2,
+.new-arrivals h2 {
+    text-align: center;
+    margin: 30px 0 8px 0;
+    font-size: 28px;
+    font-weight: normal;
+    color: #2D3536;
+}
+.subtitle {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #697C70;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Best Seller room cards */
+.best-rooms {
+    grid-template-columns: repeat(3, 1fr);
+}
+.best {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.best img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+.best h3 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #2D3536;
+    margin: 14px 0 12px;
+}
+.best button {
+    padding: 10px 28px;
+    background-color: #697C70;
+    color: #F2EFE2;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.best button:hover {
+    background-color: #2D3536;
+}
+
+/* New Arrivals product cards */
+.new-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.new {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+.new:hover {
+    transform: translateY(-6px);
+}
+.new img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+.new h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #2D3536;
+    margin: 14px 0 6px;
+}
+.new .price {
+    font-size: 18px;
+    color: #697C70;
+    margin: 0 0 12px;
+}
+.new button {
+    padding: 10px 24px;
+    background-color: #697C70;
+    color: #F2EFE2;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.new button:hover {
+    background-color: #2D3536;
+}
+
+/* Floating Contact Button */
+.float-contact-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    z-index: 999;
+}
+.float-contact-tooltip {
+    background-color: #2D3536;
+    color: #F2EFE2;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+}
+.float-contact-btn:hover .float-contact-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}
+.float-contact-bubble {
+    background-color: #697C70;
+    color: #F2EFE2;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(105,124,112,0.4);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+.float-contact-bubble:hover {
+    background-color: #2D3536;
+    transform: scale(1.05);
+    color: #F2EFE2;
+}
+.float-icon {
+    font-size: 16px;
+}
+:root {
+    --plaster: #F2EFE2;    
+    --soot: #2D3536;       
+    --eucalyptus: #98AA9D; 
+    --mist: #B3C9D6;       
+    --moss: #697C70;       
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--plaster);
+}
+
+/* ===== HEADER ===== */
+.top-bar {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--eucalyptus); /* changed */
+    padding: 12px 20px;
+
+}
+
+.logo-text {
+    color: var(--soot);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.top-bar input {
+    width: 40%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.top-bar button {
+    padding: 8px 15px;
+    background-color: var(--moss);
+    color: var(--soot);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.top-bar button:hover {
+    background-color: var(--eucalyptus);
+    color: var(--soot);
+}
+
+.top-bar a {
+    color: var(--plaster);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar 
+   .navbar {
+    background-color: var(--moss); /* softer green instead of dark */
+    padding: 12px;
+    text-align: center;
+
+}
+
+.navbar a {
+    color: var(--plaster);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: var(--eucalyptus);
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 1px solid var(--eucalyptus);
+    background-color: var(--plaster);
+}
+
+.page-header h1 {
+    font-size: 34px;
+    font-weight: normal;
+    color: var(--soot);
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: var(--moss);
+}
+
+/* ===== BUTTONS ===== */
+.buttons {
+    text-align: center;
+    margin: 25px;
+}
+
+.buttons a {
+    margin: 10px;
+    padding: 10px 22px;
+    background-color: var(--moss);
+    color: var(--plaster);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.buttons a:hover {
+    background-color: var(--eucalyptus);
+    color: var(--soot);
+}
+
+/* ===== CATEGORY GRID ===== */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background-color: var(--plaster);
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid var(--mist);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: var(--soot);
+    margin: 10px 0 5px;
+}
+
+.price {
+    color: var(--moss);
+    font-size: 14px;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.product {
+    background-color: var(--plaster);
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid var(--mist);
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h3 {
+    color: var(--soot);
+    margin: 10px 0 5px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--soot);
+    padding: 40px 30px 20px;
+    color: var(--eucalyptus);
+    border-top: 4px solid var(--moss);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 28px;
+}
+
+.footer-brand h3 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: var(--plaster);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--moss);
+    padding-bottom: 8px;
+}
+
+.footer-brand p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--mist);
+}
+
+.footer-col h4 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--plaster);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--moss);
+    padding-bottom: 8px;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 12px;
+    color: var(--eucalyptus);
+    margin-bottom: 8px;
+    padding-left: 6px;
+    border-left: 2px solid transparent;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: var(--plaster);
+    border-left-color: var(--moss);
+    padding-left: 10px;
+}
+
+.footer-contact label {
+    display: block;
+    font-size: 10px;
+    color: var(--mist);
+    margin-top: 10px;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+    width: 100%;
+    padding: 7px 9px;
+    background-color: var(--moss);
+    border: 1px solid var(--moss);
+    color: var(--plaster);
+}
+
+.footer-contact button {
+    margin-top: 10px;
+    padding: 9px;
+    background-color: var(--moss);
+    color: var(--plaster);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.footer-contact button:hover {
+    background-color: var(--eucalyptus);
+    color: var(--soot);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--moss);
+    padding-top: 16px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    color: var(--eucalyptus);
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: var(--plaster);
+}

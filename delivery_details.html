@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Belleza - Delivery Details</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+
+<div class="top-bar">
+    <a href="index_Homepage.html" class="logo-text">Maison<br>Belleza</a>
+    <input type="text" id="siteSearchInput" placeholder="Search furniture, rooms, styles..." />
+    <button onclick="doSearch()">Search</button>
+    <a href="my_profile.html">&#128100; Profile</a>
+    <a href="cart.html">&#128722; Cart (3)</a>
+</div>
+
+<div class="navbar">
+    <a href="index_Homepage.html">Home</a>
+    <a href="Shop_By_Room_Page.html">Shop by Room</a>
+    <a href="Product_Details_Page.html">Products</a>
+    <a href="favourite_prouducts.html">Favourite Products</a>
+    <a href="Gallery.html">Inspirational Gallery</a>
+</div>
+
+<h2 class="delivery-page-title">Delivery Details</h2>
+
+<form class="delivery-form">
+
+    <div class="delivery-field">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required />
+    </div>
+
+    <div class="delivery-field">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required />
+    </div>
+
+    <div class="delivery-field">
+        <label>Address</label>
+        <input type="text" placeholder="Enter your address" required />
+    </div>
+
+    <div class="delivery-field">
+        <label>City</label>
+        <input type="text" placeholder="Enter your city" required />
+    </div>
+
+    <div class="delivery-field">
+        <label>Another Phone (optional)</label>
+        <input type="tel" placeholder="Optional" />
+    </div>
+
+    <div class="delivery-field">
+        <label>Notes</label>
+        <textarea class="delivery-textarea" placeholder="Any delivery instructions..."></textarea>
+    </div>
+
+    <a href="CardPayment.html" class="delivery-btn">Confirm Delivery &#8594;</a>
+
+</form>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h3>Maison Belleza</h3>
+            <p>Curated furniture and decor for the modern home. Designed with care, built to endure.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="Shop_By_Room_Page.html">Shop by Room</a>
+            <a href="favourite_prouducts.html">Favourite Products</a>
+            <a href="new-collection.html">New Collection</a>
+            <a href="offers.html">Special Offers</a>
+        </div>
+        <div class="footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About Us</a>
+            <a href="sustainability.html">Sustainability</a>
+            <a href="previous_orders.html">Previous Orders</a>
+            <a href="permissions.html">Permissions</a>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" placeholder="Your name" />
+            <label for="femail">Email</label>
+            <input type="email" id="femail" placeholder="your@email.com" />
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" placeholder="How can we help?"></textarea>
+            <button type="button">Send Message</button>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2026 Maison Belleza. All rights reserved.</span>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Floating Contact Button -->
+<div class="float-contact-btn">
+    <div class="float-contact-tooltip">Get in touch</div>
+    <a href="Contact.html" class="float-contact-bubble">
+        <span class="float-icon">&#9993;</span> Contact Us
+    </a>
+</div>
+
+    <script src="java_func.js"></script>
+</body>
+</html>
